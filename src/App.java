@@ -7,5 +7,7 @@ public class App {
         System.out.println(re1);
         int ex = recur.potencia(2, 4);
         System.out.println(ex);
+        int sum = recur.sumanumeros(456);
+        System.err.println(sum);
     }
 }

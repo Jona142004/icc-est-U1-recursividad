@@ -26,7 +26,7 @@ public class Recursividad {
     //Calcular potencia de numero
     public int potencia(int base, int exponente){
         if (exponente == 0) {
-            System.out.println("Caso base alcanzado  " + base * exponente + " es 0");
+            System.out.println("Caso base alcanzado  " + base * exponente + " es 1");
             return 1;
         }
         int resultado = base * potencia(base , exponente -1);
@@ -35,5 +35,20 @@ public class Recursividad {
         return resultado;
 
     }
-    //Crear un metodo 
+    //Crear un metodo que sume los digitos de un numero
+    // si =mando 456 sea igual a 15
+    // 4+5+6 = 15
+    // usar mod
+    public int sumanumeros(int n){
+        if (n < 10) {
+            return n;
+            
+        }
+        int resultado = (n % 10);
+        System.out.println(resultado);
+        return (n % 10) + sumanumeros(n / 10);
+
+
+    }
+
 }
