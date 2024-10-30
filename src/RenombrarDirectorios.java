@@ -19,6 +19,12 @@
         for (File directorioArchivo : directoriosArchivosInternos) {
             if (directorioArchivo.isDirectory()) {
                 String nonbreOriginal = directorioArchivo.getName();
+                String nuevoNombre = "nuevo-" + nonbreOriginal;
+                File nuevoDirectorio = new File(directorioArchivo.getParent(), nuevoNombre);
+            if(directorioArchivo.renameTo(nuevoDirectorio)){
+                renombrarDirectoriosInternos(nuevoDirectorio);
+
+            }   
                 
             }
             
