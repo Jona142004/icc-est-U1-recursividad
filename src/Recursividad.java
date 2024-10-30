@@ -47,8 +47,16 @@ public class Recursividad {
         int resultado = (n % 10);
         System.out.println(resultado);
         return (n % 10) + sumanumeros(n / 10);
-
-
+        //serie fibonaci
     }
+    public int fibonaci (int n){
+        //casos bases
+        if (n == 0) return 0;  
+        if(n == 1) return 1;            
+            return fibonaci(n - 1) + fibonaci(n -2);
+        }
+    }
+    
+   
 
-}
+

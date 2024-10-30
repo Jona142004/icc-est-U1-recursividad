@@ -9,5 +9,7 @@ public class App {
         System.out.println(ex);
         int sum = recur.sumanumeros(456);
         System.err.println(sum);
+        int fi = recur.fibonaci(8);
+        System.out.println(fi);
     }
 }
